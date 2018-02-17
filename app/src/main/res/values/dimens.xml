@@ -10,9 +10,9 @@
     <!-- Intro Screen -->
     <dimen name="dots_height">30dp</dimen>
     <dimen name="dots_bottom_margin">20dp</dimen>
-    <dimen name="img_width">240dp</dimen>
-    <dimen name="img_height">240dp</dimen>
-    <dimen name="slide_title">36sp</dimen>
-    <dimen name="slide_desc">20sp</dimen>
+    <dimen name="img_width">200dp</dimen>
+    <dimen name="img_height">200dp</dimen>
+    <dimen name="slide_title">32sp</dimen>
+    <dimen name="slide_desc">16sp</dimen>
     <dimen name="desc_padding">40dp</dimen>
 </resources>
