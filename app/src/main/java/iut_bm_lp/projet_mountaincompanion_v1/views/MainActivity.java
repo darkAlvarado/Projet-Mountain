@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);
         } else if (id == R.id.nav_about) {
             fragment = new About_Fragment();
-            fm.beginTransaction().replace(R.id.content_main,fragment).commit();
+            fm.beginTransaction().addToBackStack("toto").replace(R.id.content_main,fragment).commit();
         }
 
 
