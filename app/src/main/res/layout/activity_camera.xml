@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="iut_bm_lp.projet_mountaincompanion_v1.views.Camera.CameraActivity">
+
+    <FrameLayout
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

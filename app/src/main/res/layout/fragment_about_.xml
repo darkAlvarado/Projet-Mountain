@@ -1,0 +1,188 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:xmls="http://schemas.android.com/apk/res-auto"
+    tools:context="iut_bm_lp.projet_mountaincompanion_v1.views.About_Fragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/titreMountain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/Titre_a_propos"
+            android:textColor="#000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/informations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titreMountain"
+            android:autoLink="all"
+            android:fontFamily="@font/roboto"
+            android:linksClickable="true"
+            android:text="@string/presentation"
+            android:textColorLink="#00F"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/informations"
+            android:layout_gravity="left"
+            android:layout_marginTop="10pt"
+            android:fontFamily="@font/roboto"
+            android:text="Google Maps"
+            android:textColor="#000"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_gravity="left"
+            android:autoLink="web"
+            android:fontFamily="@font/roboto"
+            android:textSize="8pt"
+            android:linksClickable="true"
+            android:text="@string/Texte_Google_Maps1"
+            android:textColorLink="#00F" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_gravity="left"
+            android:layout_marginTop="10pt"
+            android:autoLink="web"
+            android:fontFamily="@font/roboto"
+            android:textSize="8pt"
+            android:linksClickable="true"
+            android:text="@string/Texte_Google_Maps2"
+            android:textColorLink="#00F" />
+
+        <ImageView
+            android:id="@+id/img_gms"
+            android:layout_width="50pt"
+            android:layout_height="30pt"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/gms"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/unsplash_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_gms"
+            android:layout_gravity="left"
+            android:layout_marginTop="10pt"
+            android:text="@string/Unsplash_title"
+            android:textColor="#000"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/unsplash_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/unsplash_title"
+            android:autoLink="web"
+            android:fontFamily="@font/roboto"
+            android:textSize="8pt"
+            android:linksClickable="true"
+            android:text="@string/Unsplash_text"
+            android:textColorLink="#00F" />
+
+        <ImageView
+            android:id="@+id/unsplash_image"
+            android:layout_width="25pt"
+            android:layout_height="15pt"
+            android:layout_below="@+id/unsplash_text"
+            android:layout_gravity="left"
+            android:layout_marginLeft="50pt"
+            android:layout_marginTop="10pt"
+            android:src="@drawable/unsplach" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/unsplash_text"
+            android:layout_marginLeft="75pt"
+            android:layout_marginTop="13pt"
+            android:gravity="left"
+            android:text="@string/Unsplash_title"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/wikipedia_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/unsplash_image"
+            android:layout_marginTop="10pt"
+            android:gravity="left"
+            android:text="@string/Wikipedia"
+            android:textColor="#000"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/wikipedia_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/wikipedia_title"
+            android:layout_marginTop="0pt"
+            android:autoLink="web"
+            android:gravity="left"
+            android:fontFamily="@font/roboto"
+            android:textSize="8pt"
+            android:linksClickable="true"
+            android:text="@string/Text_wikipedia"
+            android:textColorLink="#00F" />
+
+        <TextView
+            android:id="@+id/Membres"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/wikipedia_text"
+            android:layout_marginTop="10pt"
+            android:gravity="left"
+            android:text="@string/Membre"
+            android:textColor="#000"
+            android:textSize="7pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/Membres"
+            android:layout_marginTop="0pt"
+            android:gravity="left"
+            android:fontFamily="@font/roboto"
+            android:textSize="8pt"
+            android:text="@string/Equipe" />
+    </RelativeLayout>
+</ScrollView>
+</FrameLayout>
+
+

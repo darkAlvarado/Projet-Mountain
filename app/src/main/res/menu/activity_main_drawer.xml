@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_vue"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Vue" />
+        <item
+            android:id="@+id/nav_carte"
+            android:icon="@drawable/map"
+            android:title="Carte"/>
+        <line></line>
+        <item
+            android:id="@+id/nav_tutoriel"
+            android:icon="@drawable/tuto"
+            android:title="Tutoriel"/>
+        <item
+            android:id="@+id/nav_calibrage"
+            android:icon="@drawable/calibrage"
+            android:title="Calibrage"/>
+
+        <item
+            android:id="@+id/nav_parametres"
+            android:icon="@drawable/setings"
+            android:title="Paramètres"/>
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/info"
+            android:title="À propos de"/>
+    </group>
+</menu>
