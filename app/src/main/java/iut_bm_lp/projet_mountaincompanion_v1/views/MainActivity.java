@@ -120,21 +120,20 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.nav_carte) {
             fragment = new Map_Fragment();
-            fm.beginTransaction().replace(R.id.content_main,fragment).commit();
+            fm.beginTransaction().addToBackStack(fragment.toString()).replace(R.id.content_main,fragment).commit();
         } else if (id == R.id.nav_tutoriel) {
             Intent i = new Intent(getApplicationContext(), TutoActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_calibrage) {
             fragment = new Calibration_Fragment();
-            fm.beginTransaction().replace(R.id.content_main,fragment).commit();
+            fm.beginTransaction().addToBackStack(fragment.toString()).replace(R.id.content_main,fragment).commit();
         } else if (id == R.id.nav_parametres) {
             Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_about) {
             fragment = new About_Fragment();
-            fm.beginTransaction().addToBackStack("toto").replace(R.id.content_main,fragment).commit();
+            fm.beginTransaction().addToBackStack(fragment.toString()).replace(R.id.content_main,fragment).commit();
         }
-
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -10,6 +10,7 @@ public class Mountain {
     private float longitude;
     private String nom;
     private double altitude;
+    private String wiki;
 
     private double direction;
     private double distance;
@@ -19,13 +20,14 @@ public class Mountain {
 
     }
 
-    public Mountain(int id, float latitude, float longitude, String nom, double altitude) {
+    public Mountain(int id, float latitude, float longitude, String nom, double altitude,String wiki) {
 
         this.id = id;
         this.latitude = latitude;
         this.longitude = longitude;
         this.nom = nom;
         this.altitude = altitude;
+        this.wiki = wiki;
     }
 
     @Override
@@ -36,6 +38,7 @@ public class Mountain {
                 ", longitude=" + longitude +
                 ", nom='" + nom + '\'' +
                 ", altitude=" + altitude +
+                ", wiki='" + wiki + '\'' +
                 '}';
     }
 
@@ -105,4 +108,11 @@ public class Mountain {
         this.visualElevation = visualElevation;
     }
 
+    public String getWiki() {
+        return wiki;
+    }
+
+    public void setWiki(String wiki) {
+        this.wiki = wiki;
+    }
 }
