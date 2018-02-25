@@ -2,6 +2,7 @@ package iut_bm_lp.projet_mountaincompanion_v1.views;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.hardware.Sensor;
@@ -54,7 +55,7 @@ import iut_bm_lp.projet_mountaincompanion_v1.models.Mountain;
  * create an instance of this fragment.
  */
 public class Map_Fragment extends Fragment implements LocationListener, OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks,
-        GoogleApiClient.OnConnectionFailedListener, SensorEventListener{
+        GoogleApiClient.OnConnectionFailedListener, SensorEventListener, GoogleMap.OnMarkerClickListener{
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -253,6 +254,16 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
 
         mGoogleMap = googleMap;
 
+        mGoogleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+
+                Uri uriUrl = Uri.parse((String) marker.getTag());
+                Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                startActivity(launchBrowser);
+            }
+        });
+        mGoogleMap.setOnMarkerClickListener(this);
         mountainUpdateUi(null);
 
     }
@@ -393,7 +404,8 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
                 if (((location.distanceTo(latLngMountain)) / 1000) <= mRadius) { // On divise par 1000 pour avoir des kms
 
                     LatLng latLngTest2 = new LatLng(m.getLatitude(), m.getLongitude());
-                    mGoogleMap.addMarker(new MarkerOptions().position(latLngTest2).title(m.getNom()).icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_montagne)).snippet("Altitude: " + m.getAltitude() + "\nDistance: "+ Math.round((location.distanceTo(latLngMountain))/1000)+" kms" ));
+                    Marker marker = mGoogleMap.addMarker(new MarkerOptions().position(latLngTest2).title(m.getNom()).icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_montagne)).snippet("Altitude: " + m.getAltitude() + "\nDistance: "+ Math.round((location.distanceTo(latLngMountain))/1000)+" kms" ));
+                    marker.setTag(m.getWiki());
 
                     mGoogleMap.setInfoWindowAdapter(new MyInfoWindow(getContext()));
                     //  b.include(latLngTest2);
@@ -450,6 +462,11 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
 
+    }
+
+    @Override
+    public boolean onMarkerClick(Marker marker) {
+        return false;
     }
 
     /**********/

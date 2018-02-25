@@ -15,18 +15,9 @@ import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 public class MountainDatabaseHandler extends SQLiteAssetHelper {
 
-    public static String DB_NAME = "montagnes.db";
-
-//    public static final String MOUNTAIN_KEY = "id";
-//    public static final String MOUNTAIN_LONGITUDE = "longitude";
-//    public static final String MOUNTAIN_LATITUDE = "latitude";
-//    public static final String MOUNTAIN_NOM = "nom";
-//    public static final String MOUNTAIN_ALTITUDE = "altitude";
+    public static String DB_NAME = "montagnees.db";
 
     public static final int DATABASE_VERSION = 1;
-
-//    public static final String MOUNTAIN_TABLE_NAME = "sommets";
-
 
     public MountainDatabaseHandler(Context context) {
 

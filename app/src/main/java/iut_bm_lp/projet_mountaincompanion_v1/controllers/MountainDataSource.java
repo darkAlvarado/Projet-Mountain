@@ -23,24 +23,12 @@ public class MountainDataSource {
     private SQLiteOpenHelper openHelper;
     private static MountainDataSource instance;
 
-
-
     public ArrayList<Mountain> mountains = new ArrayList<>();
-    /*
-    private String[] allColumns = {
-            MountainDatabaseHandler.MOUNTAIN_KEY
-            ,MountainDatabaseHandler.MOUNTAIN_LATITUDE
-            ,MountainDatabaseHandler.MOUNTAIN_LONGITUDE
-            ,MountainDatabaseHandler.MOUNTAIN_NOM
-            ,MountainDatabaseHandler.MOUNTAIN_ALTITUDE
-    };
-    */
 
     public MountainDataSource(Context context) {
 
         this.openHelper = new MountainDatabaseHandler(context);
     }
-
 
     public static MountainDataSource getInstance(Context context) {
 
@@ -95,6 +83,7 @@ public class MountainDataSource {
         mountain.setLatitude(cursor.getFloat(2));
         mountain.setNom(cursor.getString(3));
         mountain.setAltitude(cursor.getInt(4));
+        mountain.setWiki(cursor.getString(5));
 
         return mountain;
     }
@@ -142,9 +131,7 @@ public class MountainDataSource {
             Mountain m;
 
             do {
-
                 try {
-
                     m = cursorToMountain(cursor);
 
                         //    Log.e("CurrentLat: ", ""+ currentLatitude);
@@ -179,7 +166,7 @@ public class MountainDataSource {
                     m.setVisualElevation(Math.atan2(dheight, m.getDistance() * 1000));
 //
                     //Log.e("Nom: ","" + m.getNom());
-//                    Log.e("angle: ", "" + m.getVisualElevation());
+                    //Log.e("angle: ", "" + m.getVisualElevation());
                     //Log.e("Distance: ", "" + m.getDistance());
 
                       //Log.e("Direction:", "" + m.getDirection());
@@ -196,37 +183,3 @@ public class MountainDataSource {
     }
 
 }
-
-
-
-
-
-    /*
-    public Mountain addMountain(int id, float latitude, float longitude, String nom, int altitude ) {
-
-        ContentValues values = new ContentValues();
-        values.put(MountainDatabaseHandler.MOUNTAIN_KEY, id);
-        values.put(MountainDatabaseHandler.MOUNTAIN_LATITUDE, latitude);
-        values.put(MountainDatabaseHandler.MOUNTAIN_LONGITUDE, longitude);
-        values.put(MountainDatabaseHandler.MOUNTAIN_NOM, nom);
-        values.put(MountainDatabaseHandler.MOUNTAIN_ALTITUDE, altitude);
-
-        long insertId = database.insert(MountainDatabaseHandler.MOUNTAIN_TABLE_NAME, null, values);
-        Cursor cursor = database.query(MountainDatabaseHandler.MOUNTAIN_TABLE_NAME, allColumns, ""+insertId, null, null, null, null);
-
-        cursor.moveToFirst();
-        Mountain newMountain = cursorToMountain(cursor);
-        cursor.close();
-
-        return newMountain;
-
-    }
-
-    public void deleteMountain(Mountain mountain) {
-
-        long id = mountain.getId();
-        System.out.println(" Mountain deleted with id: " + id);
-        database.delete(MountainDatabaseHandler.MOUNTAIN_TABLE_NAME, MountainDatabaseHandler.MOUNTAIN_KEY + " = " + id, null);
-    }
-*/
-
