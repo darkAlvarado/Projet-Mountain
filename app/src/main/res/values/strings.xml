@@ -1,9 +1,8 @@
 <resources>
-<<<<<<< HEAD
+
     <string name="app_name">Mountain Companion </string>
-=======
-    <string name="app_name">Mountain Companion</string>
->>>>>>> 5e359040ea8c0a2019734facb194ab0d857299f5
+
+
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -162,10 +161,7 @@ Yassine Zekri\n
 
 
 <!--<<<<<<< HEAD-->
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Tutoriel
+
 
     <string name="next">Suivant</string>
     <string name="skip">Passer</string>
