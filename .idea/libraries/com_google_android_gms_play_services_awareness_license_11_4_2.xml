@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="com.google.android.gms:play-services-awareness-license-11.4.2">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-awareness-license-11.4.2.aar/fbd74e80166089fbe80f83d0a899aa77/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-awareness-license-11.4.2.aar/fbd74e80166089fbe80f83d0a899aa77/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-awareness-license-11.4.2.aar/71c32084c3119d29ebcdb4d96a6116c8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-awareness-license-11.4.2.aar/71c32084c3119d29ebcdb4d96a6116c8/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
