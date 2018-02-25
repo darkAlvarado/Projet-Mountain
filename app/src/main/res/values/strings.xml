@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mountain Companion - V.1</string>
+    <string name="app_name">Mountain Companion </string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -174,7 +174,7 @@ Yassine Zekri\n
     </string>
     <string name="title_slide1">Position</string>
     <string name="desc_slide1">
-        Pour obteneir des informations sur les montagnes et les lacs à proximité, nous devons accéder à votre position.
+        Pour obtenir des informations sur les montagnes et les lacs à proximité, nous devons accéder à votre position.
     </string>
     <string name="title_slide2">Connexion Internet</string>
     <string name="desc_slide2">
