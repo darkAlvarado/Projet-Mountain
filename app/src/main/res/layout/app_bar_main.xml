@@ -12,9 +12,6 @@
         android:layout_height="58dp"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:tint="@android:color/transparent"
-        app:backgroundTint="@color/cast_libraries_material_featurehighlight_text_header_color"
-        app:fabSize="mini"
         app:rippleColor="#439644"
         app:srcCompat="@drawable/camera"
         tools:layout_editor_absoluteY="486dp"/>
@@ -28,7 +25,6 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@android:color/holo_green_dark"
             app:popupTheme="@style/AppTheme.PopupOverlay"/>
 
     </android.support.design.widget.AppBarLayout>
