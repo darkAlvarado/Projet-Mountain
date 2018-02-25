@@ -169,7 +169,7 @@ Yassine Zekri\n
 
     <string name="tutointro">Bienvenue</string>
     <string name="desc_intro">
-        Nous ferons un tour rapide des principales fonctions du Mountain Companion.\n\n
+        Nous ferons un tour rapide des principales fonctions de Mountain Companion.\n\n
         Rappelez-vous que vous pouvez accéder au tutoriel depuis le menu.
     </string>
     <string name="title_slide1">Position</string>
@@ -178,9 +178,7 @@ Yassine Zekri\n
     </string>
     <string name="title_slide2">Connexion Internet</string>
     <string name="desc_slide2">
-        Par défaut, Mountain Companion nécessite une connexion Internet pour charger la carte.\n\n
-        Cependant, il est possible de télécharger une zone et l\'application fonctionnera sans connexion Internet dans les régions couvertes par celle-ci.\n\n
-        Vous pouvez voir les téléchargements depuis le menu de l\'application.
+        Par défaut, Mountain Companion nécessite une connexion Internet pour charger la carte.\n
     </string>
     <string name="title_slide3">Montagnes</string>
     <string name="desc_slide3">
