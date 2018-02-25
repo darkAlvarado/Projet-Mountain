@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Mountain Companion - V.1</string>
+    <string name="app_name">Mountain Companion</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -174,18 +174,18 @@ Yassine Zekri\n
     </string>
     <string name="title_slide1">Position</string>
     <string name="desc_slide1">
-        Pour obteneir des informations sur les montagnes et les lacs à proximité, nous devons accéder à votre position.
+        Pour obtenir des informations sur les montagnes et les lacs à proximité, nous devons accéder à votre position.
     </string>
     <string name="title_slide2">Connexion Internet</string>
     <string name="desc_slide2">
         Par défaut, Mountain Companion nécessite une connexion Internet pour charger la carte.\n\n
-        Cependant, il est possible de télécharger une zone et l\'application fonctionnera sans connexion Internet das les régions couvertes par celle-ci.\n\n
+        Cependant, il est possible de télécharger une zone et l\'application fonctionnera sans connexion Internet dans les régions couvertes par celle-ci.\n\n
         Vous pouvez voir les téléchargements depuis le menu de l\'application.
     </string>
     <string name="title_slide3">Montagnes</string>
     <string name="desc_slide3">
         Mountain Companion est une application qui permet d\'estimer la position des montagnes, elle doit
-        donc être utilisée dans un evironnement où les montagnes sont visibles.
+        donc être utilisée dans un environnement où les montagnes sont visibles.
     </string>
 
     <string name="tuto4">Allez-y</string>

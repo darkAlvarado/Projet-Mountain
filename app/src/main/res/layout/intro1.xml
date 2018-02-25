@@ -32,7 +32,7 @@
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
             android:text="@string/desc_intro"
-            android:textAlignment="center"
+            android:textAlignment="inherit"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_desc" />
 
