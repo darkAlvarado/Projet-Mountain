@@ -124,10 +124,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_tutoriel) {
             Intent i = new Intent(getApplicationContext(), TutoActivity.class);
             startActivity(i);
-        } else if (id == R.id.nav_calibrage) {
-            fragment = new Calibration_Fragment();
-            fm.beginTransaction().addToBackStack(fragment.toString()).replace(R.id.content_main,fragment).commit();
-        } else if (id == R.id.nav_parametres) {
+        }  else if (id == R.id.nav_parametres) {
             Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_about) {

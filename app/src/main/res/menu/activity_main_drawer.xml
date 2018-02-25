@@ -18,10 +18,6 @@
             android:id="@+id/nav_tutoriel"
             android:icon="@drawable/tuto"
             android:title="Tutoriel"/>
-        <item
-            android:id="@+id/nav_calibrage"
-            android:icon="@drawable/calibrage"
-            android:title="Calibrage"/>
 
         <item
             android:id="@+id/nav_parametres"

@@ -16,6 +16,12 @@
         android:selectAllOnFocus="true"
         android:singleLine="true"
         android:title="@string/pref_radius"/>
+    <EditTextPreference
+        android:defaultValue="20"
+        android:key="@string/key_max_distance"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_max_distance" />
     <ListPreference
         android:defaultValue="3"
         android:entries="@array/pref_choix_style_carte"
