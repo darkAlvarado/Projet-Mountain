@@ -3,6 +3,7 @@
     <color name="colorPrimary">#12c671</color>
     <color name="colorPrimaryDark">#13A962</color>
     <color name="colorAccent">#13A962</color>
+    <color name="navigation_bar">#000000</color>
 
     <!-- Screens background -->
     <color name="bg_screen1">#a61100</color>

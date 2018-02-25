@@ -21,6 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/title_slide1"
+            android:fontFamily="@font/roboto_bold"
             android:textColor="@android:color/white"
             android:textSize="@dimen/slide_title"
             android:textStyle="bold" />
@@ -29,6 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto"
             android:paddingLeft="@dimen/desc_padding"
             android:paddingRight="@dimen/desc_padding"
             android:text="@string/desc_slide1"

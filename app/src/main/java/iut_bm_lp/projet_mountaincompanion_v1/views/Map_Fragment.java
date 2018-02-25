@@ -239,11 +239,7 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
 
     @Override
     public void onLocationChanged(Location location) {
-
-        Toast.makeText(getActivity(), "New Location !", Toast.LENGTH_SHORT).show();
-
         mountainUpdateUi(location);
-
     }
 
     /**************/
@@ -301,7 +297,6 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
                 startLocationUpdates();
                 mGoogleMap.setMyLocationEnabled(true); //Active le calque Ma position sur la carte !
                 LatLng myPos = new LatLng(47.648362500000005, 6.8465981);
-
             } else {
                 stopLocationUpdates();
             }
@@ -351,9 +346,6 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
         mLocationEnabled = sharedPref.getBoolean(getResources().getString(R.string.key_location_switch), false);
 
         if(mLocationEnabled) {
-
-            Toast.makeText(getActivity(), "Localisation ON", Toast.LENGTH_SHORT).show();
-
             mLocationRequest = new LocationRequest();
             mLocationRequest.setInterval(1000);
         }
