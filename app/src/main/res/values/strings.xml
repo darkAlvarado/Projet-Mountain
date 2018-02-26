@@ -178,7 +178,12 @@ Yassine Zekri\n
     </string>
     <string name="title_slide2">Connexion Internet</string>
     <string name="desc_slide2">
+<<<<<<< HEAD
         Par défaut, Mountain Companion nécessite une connexion Internet pour charger la carte.\n
+=======
+        Par défaut, Mountain Companion nécessite une connexion Internet pour charger la carte.\n\n
+        Cependant, il est possible de télécharger une zone et l\'application fonctionnera sans connexion Internet dans les régions couvertes par celle-ci.\n\n
+>>>>>>> fbdbfbee35a8705ea2b738375f6db9c63c5baf60
     </string>
     <string name="title_slide3">Montagnes</string>
     <string name="desc_slide3">

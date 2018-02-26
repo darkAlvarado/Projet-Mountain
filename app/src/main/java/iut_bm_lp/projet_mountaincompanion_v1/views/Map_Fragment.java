@@ -115,7 +115,7 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Map_fragment.
+     * @return A new instance of fragment Map_fragment.o
      */
     // TODO: Rename and change types and number of parameters
     public static Map_Fragment newInstance(String param1, String param2) {
@@ -239,11 +239,7 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
 
     @Override
     public void onLocationChanged(Location location) {
-
-        Toast.makeText(getActivity(), "New Location !", Toast.LENGTH_SHORT).show();
-
         mountainUpdateUi(location);
-
     }
 
     /**************/
@@ -301,13 +297,10 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
                 startLocationUpdates();
                 mGoogleMap.setMyLocationEnabled(true); //Active le calque Ma position sur la carte !
                 LatLng myPos = new LatLng(47.648362500000005, 6.8465981);
-
             } else {
                 stopLocationUpdates();
             }
         }
-
-
     }
 
     private void drawCircle(LatLng location) {
@@ -351,9 +344,6 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
         mLocationEnabled = sharedPref.getBoolean(getResources().getString(R.string.key_location_switch), false);
 
         if(mLocationEnabled) {
-
-            Toast.makeText(getActivity(), "Localisation ON", Toast.LENGTH_SHORT).show();
-
             mLocationRequest = new LocationRequest();
             mLocationRequest.setInterval(1000);
         }
@@ -373,7 +363,7 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
     }
 
 
-    private void mountainUpdateUi(Location location) {
+       private void mountainUpdateUi(Location location) {
 
         if (location != null) {
 
@@ -391,7 +381,7 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
 
             mDataSource = MountainDataSource.getInstance(getContext());
             mDataSource.open();
-                 //ArrayList<Mountain> mountains = mDataSource.getAllMountains();
+            //ArrayList<Mountain> mountains = mDataSource.getAllMountains();
             mMountains = mDataSource.getAllMountains();
             mDataSource.close();
 
@@ -412,15 +402,14 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
                 }
             }
 
-                            /**** FLECHE ORIENTATION    ****/
+            /**** FLECHE ORIENTATION    ****/
             LatLng pt = new LatLng(location.getLatitude(), location.getLongitude());
 
             compassMarker = mGoogleMap.addMarker(new MarkerOptions().position(pt)
-                            .anchor(0.5f,0.5f)
-                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.bluearrow)));
-                                        /****/
+                    .anchor(0.5f,0.5f)
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.bluearrow)));
+            /****/
         }
-
     }
 
     /**********************         Méthode de l'interface SensorEventListener      ******************/
