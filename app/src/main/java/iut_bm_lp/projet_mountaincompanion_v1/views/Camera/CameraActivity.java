@@ -181,7 +181,6 @@ public class CameraActivity extends AppCompatActivity implements LocationListene
 
         if (requestCode == REQUEST_CAMERA) {
             if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-
                 finish();
                 startActivity(getIntent());
             } else {
@@ -637,7 +636,6 @@ public class CameraActivity extends AppCompatActivity implements LocationListene
                 if (moreinfo) bnds.top -= drawtextsize;
                 bnds.bottom += tm.toppt - 5 - toppt;
 
-                // for debug - draws bounding box of touch region to select hill
                 // canvas.drawRect(bnds, strokePaint)
 
                 mMarkers.add(new HillMarker(tm.m.getId(), bnds));
@@ -685,24 +683,3 @@ public class CameraActivity extends AppCompatActivity implements LocationListene
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

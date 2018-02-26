@@ -115,7 +115,7 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Map_fragment.
+     * @return A new instance of fragment Map_fragment.o
      */
     // TODO: Rename and change types and number of parameters
     public static Map_Fragment newInstance(String param1, String param2) {
@@ -301,8 +301,6 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
                 stopLocationUpdates();
             }
         }
-
-
     }
 
     private void drawCircle(LatLng location) {
@@ -365,7 +363,7 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
     }
 
 
-    private void mountainUpdateUi(Location location) {
+       private void mountainUpdateUi(Location location) {
 
         if (location != null) {
 
@@ -383,7 +381,7 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
 
             mDataSource = MountainDataSource.getInstance(getContext());
             mDataSource.open();
-                 //ArrayList<Mountain> mountains = mDataSource.getAllMountains();
+            //ArrayList<Mountain> mountains = mDataSource.getAllMountains();
             mMountains = mDataSource.getAllMountains();
             mDataSource.close();
 
@@ -404,15 +402,14 @@ public class Map_Fragment extends Fragment implements LocationListener, OnMapRea
                 }
             }
 
-                            /**** FLECHE ORIENTATION    ****/
+            /**** FLECHE ORIENTATION    ****/
             LatLng pt = new LatLng(location.getLatitude(), location.getLongitude());
 
             compassMarker = mGoogleMap.addMarker(new MarkerOptions().position(pt)
-                            .anchor(0.5f,0.5f)
-                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.bluearrow)));
-                                        /****/
+                    .anchor(0.5f,0.5f)
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.bluearrow)));
+            /****/
         }
-
     }
 
     /**********************         Méthode de l'interface SensorEventListener      ******************/
